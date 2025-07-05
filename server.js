@@ -38,15 +38,18 @@ app.use(keycloak.middleware({
 app.use(express.json());
 app.use(express.static('public')); // Serve static files from the 'public' directory
 app.use(express.urlencoded({ extended: true }));
+app.set('views', './views');
+app.set('view engine', 'ejs');
 
 
 app.get('/', (req, res) => {
     {/* This will render the landing page */}
-    res.send('Hello, World!');
+    res.render('landing');
 });
 // app.get('logout', (req, res) => {
 //     {/* This will log the user out from Keycloak */}
 //     keycloak.logoutUrl('htttp://localhost:9002')
+//     res.redirect('/')
 // });
 
 app.use('/dashboard', keycloak.protect(), dashboardRoute)
