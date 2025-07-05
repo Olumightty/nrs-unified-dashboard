@@ -66,6 +66,6 @@ jobs:
           script: |
             sudo docker stop nrs-unified || true
             sudo docker rm -f nrs-unified || true
-            sudo docker rmi -f  ${{ vars.DOCKER_USERNAME }}/${{ vars.DOCKER_REPO_NAME }}:main || true
-            sudo docker pull ${{ vars.DOCKER_USERNAME }}/${{ vars.DOCKER_REPO_NAME }}:main
-            sudo docker run -d --env-file=./nrs/.env --name nrs-unified -p 3000:${{ vars.DOCKER_PORT }} ${{ vars.DOCKER_USERNAME }}/${{ vars.DOCKER_REPO_NAME }}:main
+            sudo docker rmi -f  ${{ vars.DOCKER_USERNAME }}/${{ vars.DOCKER_REPO_NAME }}:${{ vars.DOCKER_TAG }} || true
+            sudo docker pull ${{ vars.DOCKER_USERNAME }}/${{ vars.DOCKER_REPO_NAME }}:${{ vars.DOCKER_TAG }}
+            sudo docker run -d --env-file=./nrs/.env --name nrs-unified -p 3000:${{ vars.DOCKER_PORT }} ${{ vars.DOCKER_USERNAME }}/${{ vars.DOCKER_REPO_NAME }}:${{ vars.DOCKER_TAG }}
