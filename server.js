@@ -40,6 +40,7 @@ app.use(express.static('public')); // Serve static files from the 'public' direc
 app.use(express.urlencoded({ extended: true }));
 app.set('views', './views');
 app.set('view engine', 'ejs');
+app.set('trust proxy', true);
 
 
 app.get('/', (req, res) => {
