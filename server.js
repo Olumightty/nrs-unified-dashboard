@@ -26,7 +26,7 @@ app.use(session({
     saveUninitialized: false,
     store: memoryStore,
     cookie: {
-        secure: process.env.NODE_ENV === 'production',
+        secure: process.env.NODE_ENV == 'production',
         maxAge: 60 * 60 * 1000 // 10 seconds for testing purposes
     }
 }));
@@ -45,6 +45,7 @@ app.set('trust proxy', true);
 
 app.get('/', (req, res) => {
     {/* This will render the landing page */}
+    console.log(req.protocol, req.get('host'));
     res.render('landing');
 });
 // app.get('logout', (req, res) => {
