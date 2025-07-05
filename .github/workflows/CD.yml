@@ -26,6 +26,8 @@ jobs:
         with:
           # get details from github secrets and varibles
           images: ${{ vars.DOCKER_USERNAME }}/${{ vars.DOCKER_REPO_NAME }}
+          tags: |
+            type=raw,value=${{ vars.DOCKER_TAG }}
 
         # log in to docker  hub with your creds
       - name: Log in to Docker Hub
