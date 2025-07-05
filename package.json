@@ -1,0 +1,22 @@
+{
+  "name": "firs-unified",
+  "version": "1.0.0",
+  "description": "Unified Dashboard for NRS/FIRS Applications",
+  "license": "ISC",
+  "author": "NeoCloud",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "dependencies": {
+    "axios": "^1.10.0",
+    "dotenv": "^17.0.1",
+    "express": "^5.1.0",
+    "express-session": "^1.18.1",
+    "jsonwebtoken": "^9.0.2",
+    "keycloak-connect": "^26.1.1",
+    "morgan": "^1.10.0"
+  }
+}
