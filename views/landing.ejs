@@ -3,9 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="icon" href="/images/c949d66f-8e6f-40a3-b63e-61000ef3d61a.jpeg">
+    <title>Home</title>
 </head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    main{
+        background: url('/images/nrs.jpg'); 
+        background-size: cover; 
+        background-repeat: no-repeat; 
+        position: relative; 
+        overflow: hidden;
+    }
+    div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.5);
+        height: 100vh;
+        animation: divfading 2s ease-in-out;
+    }
+    button{
+        padding: 10px 20px;
+        border-radius: 5px;
+        background-color: #d32e1f;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+    button a{
+        text-decoration: none;
+        color: white;
+        
+    }
+    button {
+        transition: 0.3s ease-in-out;
+        width: 150px;
+        font-size: larger;
+    }
+    button:hover{
+        scale: 1.1;
+        
+    }
+    h1{
+        font-weight: 900;
+        color: white;
+        font-size: 50px;
+        margin-bottom: 10px;
+    }
+    @keyframes divfading {
+        from{
+            opacity: 0;
+
+        }
+        to{
+            opacity: 1;
+        }
+        
+    }
+
+</style>
 <body>
-    <h1>This is the landing page</h1>
+    <main>
+       <div>
+            <h1>Welcome to NRS Unified Application Dashboard</h1>
+            <a href="/dashboard"><button>Go to Apps</button></a>
+        </div> 
+    </main>
+   
 </body>
 </html>

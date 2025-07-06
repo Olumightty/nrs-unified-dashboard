@@ -3,9 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dashboard</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+   <link rel="stylesheet" href="/stylesheet/style.css">
+   <link rel="icon" href="/images/c949d66f-8e6f-40a3-b63e-61000ef3d61a.jpeg">
+    <script src="/javascript/script.js" defer></script>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
 </head>
 <body>
-    <h1>This is the dashboard page</h1>
+    <!--navigation  -->
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <a href="/">
+                    <img id="logo" src="/images/c949d66f-8e6f-40a3-b63e-61000ef3d61a-removebg-preview.png" alt="" height="100px" width="100px"/>
+                </a>
+                <li>
+                    <a href="/dashboard">
+                        <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+            <!-- <li> -->
+                <!-- <a href="">
+                        <span class="icon"><ion-icon name="people-outline"></ion-icon></span>
+                        <span class="title">Customers</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="icon"><ion-icon name="chatbox-outline"></ion-icon></span>
+                        <span class="title">Messages</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="icon"><ion-icon name="help-outline"></ion-icon></span>
+                        <span class="title">Help</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="icon"><ion-icon name="settings-outline"></ion-icon></span>
+                        <span class="title">Settings</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                        <span class="title">Password</span>
+                    </a>
+                </li-->
+                <li> 
+                    <a href="/logout" class="sign-out">
+                        <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
+                        <span class="title">Sign Out</span>
+                    </a>
+                </li>
+                    
+            </ul>
+        </div>
+        <!-- main -->
+         <div class="main">
+            <div class="topbar">
+               <div class="toggle">
+                   <ion-icon name="menu-outline"></ion-icon>
+               </div>
+
+               <div class="search">
+                <label for="">
+                    <input type="text" placeholder="Search here" id="sea">
+                    <ion-icon name="search-outline"></ion-icon>
+                </label>
+               </div>
+               <div class="user">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png" alt="" width="230px" height="230px">
+               </div>
+            </div>
+            <!-- cards -->
+           
+               
+<div class="card-box">
+        <a href="https://neocloud.ng/sch_lms" target="_blank">
+            <img src="/images/sch.jpg" alt="">
+            <h2>School LMS</h2>
+        </a>
+        <a href="https://neocloud.ng/hrm" target="_blank">
+            
+            <img src="/images/hrm.jpg" alt="">
+            <h2>HRM Dashboard</h2>
+        </a>
+        <a href="https://neocloud.ng/nctcbt" target="_blank">
+            <img src="/images/cbt.jpg" alt="">
+            <h2>CBT Application</h2>
+        </a>    
+      </div>
+    
+             </div>
+         </div>
+    </div>
+
+    <!-- ionicon -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
